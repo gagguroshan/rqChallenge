@@ -14,8 +14,14 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'org.springframework.boot:spring-boot-starter-test'
+//    implementation 'org.springframework.data:spring-data-commons'    
     implementation 'javax.inject:javax.inject:1'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//    compileOnly 'org.springframework.boot:spring-boot-starter-data-rest'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+//    compileOnly 'io.netty:netty-all'
 }
 
 test {
